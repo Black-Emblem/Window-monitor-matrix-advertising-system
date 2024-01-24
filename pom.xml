@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.example.windowmonitormatrix/com.example.windowmonitormatrix.HelloApplication
+                                com.example.windowmonitormatrix/com.example.windowmonitormatrix.WindowMonitorMatrix
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
