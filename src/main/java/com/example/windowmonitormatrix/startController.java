@@ -29,10 +29,10 @@ public class startController {
     @FXML
     private void connect(ActionEvent event) throws IOException {
         if (startButton.getText()=="Enter"){
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("monitor demo.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("main.fxml"));
             Parent root = loader.load();
             Stage stage = (Stage) startButton.getScene().getWindow();
-            stage.setResizable(true);
+            stage.setResizable(false);
             stage.setScene(new Scene(root));
             stage.show();
         }
