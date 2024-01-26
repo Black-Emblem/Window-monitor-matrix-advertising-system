@@ -1,33 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.web.WebView?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.windowmonitormatrix.MainController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="733.0" prefWidth="1094.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.windowmonitormatrix.MainController">
    <children>
-      <TabPane maxHeight="1.7976931348623157E308" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+      <TabPane maxHeight="1.7976931348623157E308" prefHeight="733.0" prefWidth="1094.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
-          <Tab text="Untitled Tab 1">
+            <Tab text="Matrix preview">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <WebView fx:id="MV0" contextMenuEnabled="false" disable="true" fontScale="0.1" layoutX="738.0" layoutY="57.0" prefHeight="192.0" prefWidth="108.0" />
+                        <WebView fx:id="MV1" contextMenuEnabled="false" disable="true" fontScale="0.1" layoutX="855.0" layoutY="57.0" prefHeight="192.0" prefWidth="108.0" />
+                        <WebView fx:id="MV2" contextMenuEnabled="false" disable="true" fontScale="0.1" layoutX="972.0" layoutY="57.0" prefHeight="192.0" prefWidth="108.0" />
+                        <WebView fx:id="MV3" contextMenuEnabled="false" disable="true" fontScale="0.1" layoutX="738.0" layoutY="256.0" prefHeight="192.0" prefWidth="108.0" />
+                        <WebView fx:id="MV4" contextMenuEnabled="false" disable="true" fontScale="0.1" layoutX="855.0" layoutY="256.0" prefHeight="192.0" prefWidth="108.0" />
+                        <WebView fx:id="MV5" contextMenuEnabled="false" disable="true" fontScale="0.1" layoutX="972.0" layoutY="256.0" prefHeight="192.0" prefWidth="108.0" />
+                        <WebView fx:id="MV6" contextMenuEnabled="false" disable="true" fontScale="0.1" layoutX="738.0" layoutY="457.0" prefHeight="192.0" prefWidth="108.0" />
+                        <WebView fx:id="MV7" contextMenuEnabled="false" disable="true" fontScale="0.1" layoutX="855.0" layoutY="457.0" prefHeight="192.0" prefWidth="108.0" />
+                        <WebView fx:id="MV8" contextMenuEnabled="false" disable="true" fontScale="0.1" layoutX="972.0" layoutY="457.0" prefHeight="192.0" prefWidth="108.0" />
+                        <Button layoutX="1000.0" layoutY="659.0" mnemonicParsing="false" onAction="#onRefresh" text="Refresh" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+          <Tab text="Monitors">
             <content>
               <AnchorPane focusTraversable="true" />
             </content>
           </Tab>
-          <Tab text="Untitled Tab 2">
+          <Tab text="Listings">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="512.0" />
             </content>
           </Tab>
-            <Tab text="Untitled Tab 1">
+            <Tab text="Adverts">
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                </content>
             </Tab>
-            <Tab text="Untitled Tab 1">
-               <content>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-               </content>
-            </Tab>
-            <Tab text="Untitled Tab 1">
+            <Tab text="Settings">
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                </content>
