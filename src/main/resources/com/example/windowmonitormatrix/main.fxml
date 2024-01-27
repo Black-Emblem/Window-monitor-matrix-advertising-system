@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
@@ -46,9 +47,9 @@
                                     <Text layoutX="81.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: 1" wrappingWidth="43.23828125" />
                                     <Text layoutX="124.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column:1" />
                                     <Text layoutX="187.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP:192.168.1.90" />
-                                    <Text fx:id="MS1" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="State: ON" />
+                                    <Text fx:id="MS1" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" />
                                     <Text layoutX="408.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently displaying: listing" wrappingWidth="143.6484375" />
-                                    <Button fx:id="SB1" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSB1A" text="Turn off" />
+                                    <Button fx:id="SB1" disable="true" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSB1A" />
                                     <Text layoutX="592.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last heartbeat:" wrappingWidth="80.712890625" />
                                     <Separator layoutX="66.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
                                     <Separator layoutX="174.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
@@ -66,9 +67,9 @@
                                     <Text layoutX="81.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: 1" wrappingWidth="43.23828125" />
                                     <Text layoutX="124.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column:2" />
                                     <Text layoutX="187.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP:192.168.1.91" />
-                                    <Text fx:id="MS2" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="State: ON" />
+                                    <Text fx:id="MS2" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" />
                                     <Text layoutX="408.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently displaying: listing" wrappingWidth="143.6484375" />
-                                    <Button fx:id="SB2" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSB2A" text="Turn off" />
+                                    <Button fx:id="SB2" disable="true" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSB2A" />
                                     <Text layoutX="592.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last heartbeat:" wrappingWidth="80.712890625" />
                                     <Separator layoutX="66.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
                                     <Separator layoutX="174.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
@@ -86,9 +87,9 @@
                                     <Text layoutX="81.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: 1" wrappingWidth="43.23828125" />
                                     <Text layoutX="124.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column:3" />
                                     <Text layoutX="187.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP:192.168.1.92" />
-                                    <Text fx:id="MS3" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="State: ON" />
+                                    <Text fx:id="MS3" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" />
                                     <Text layoutX="408.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently displaying: listing" wrappingWidth="144.6484375" />
-                                    <Button fx:id="SB3" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSB3A" text="Turn off" />
+                                    <Button fx:id="SB3" disable="true" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSB3A" />
                                     <Text layoutX="592.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last heartbeat:" wrappingWidth="80.712890625" />
                                     <Separator layoutX="66.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
                                     <Separator layoutX="174.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
@@ -106,9 +107,9 @@
                                     <Text layoutX="81.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: 2" wrappingWidth="43.23828125" />
                                     <Text layoutX="124.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column:1" />
                                     <Text layoutX="187.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP:192.168.1.93" />
-                                    <Text fx:id="MS4" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="State: ON" />
+                                    <Text fx:id="MS4" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" />
                                     <Text layoutX="408.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently displaying: listing" wrappingWidth="144.6484375" />
-                                    <Button fx:id="SB4" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSB4A" text="Turn off" />
+                                    <Button fx:id="SB4" disable="true" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSB4A" />
                                     <Text layoutX="592.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last heartbeat:" wrappingWidth="80.712890625" />
                                     <Separator layoutX="66.0" layoutY="1.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
                                     <Separator layoutX="174.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
@@ -126,9 +127,9 @@
                                     <Text layoutX="81.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: 2" wrappingWidth="43.23828125" />
                                     <Text layoutX="124.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column:2" />
                                     <Text layoutX="187.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP:192.168.1.94" />
-                                    <Text fx:id="MS5" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="State: ON" />
+                                    <Text fx:id="MS5" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" />
                                     <Text layoutX="408.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently displaying: listing" wrappingWidth="144.6484375" />
-                                    <Button fx:id="SB5" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSB5A" text="Turn off" />
+                                    <Button fx:id="SB5" disable="true" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSB5A" />
                                     <Text layoutX="592.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last heartbeat:" wrappingWidth="80.712890625" />
                                     <Separator layoutX="66.0" layoutY="1.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
                                     <Separator layoutX="174.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
@@ -146,9 +147,9 @@
                                     <Text layoutX="81.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: 2" wrappingWidth="43.23828125" />
                                     <Text layoutX="124.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column:3" />
                                     <Text layoutX="187.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP:192.168.1.95" />
-                                    <Text fx:id="MS6" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="State: ON" />
+                                    <Text fx:id="MS6" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" />
                                     <Text layoutX="408.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently displaying: listing" wrappingWidth="143.6484375" />
-                                    <Button fx:id="SB6" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSB6A" text="Turn off" />
+                                    <Button fx:id="SB6" disable="true" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSB6A" />
                                     <Text layoutX="592.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last heartbeat:" wrappingWidth="80.712890625" />
                                     <Separator layoutX="66.0" layoutY="1.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
                                     <Separator layoutX="174.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
@@ -166,9 +167,9 @@
                                     <Text layoutX="81.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: 3" wrappingWidth="43.23828125" />
                                     <Text layoutX="124.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column:1" />
                                     <Text layoutX="187.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP:192.168.1.96" />
-                                    <Text fx:id="MS7" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="State: ON" />
+                                    <Text fx:id="MS7" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" />
                                     <Text layoutX="408.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently displaying: listing" wrappingWidth="146.6484375" />
-                                    <Button fx:id="SB7" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSB7A" text="Turn off" />
+                                    <Button fx:id="SB7" disable="true" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSB7A" />
                                     <Text layoutX="592.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last heartbeat:" wrappingWidth="80.712890625" />
                                     <Separator layoutX="66.0" layoutY="1.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
                                     <Separator layoutX="174.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
@@ -186,9 +187,9 @@
                                     <Text layoutX="81.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: 3" wrappingWidth="43.23828125" />
                                     <Text layoutX="124.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column:2" />
                                     <Text layoutX="187.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP:192.168.1.97" />
-                                    <Text fx:id="MS8" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="State: ON" />
+                                    <Text fx:id="MS8" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" />
                                     <Text layoutX="408.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently displaying: listing" wrappingWidth="144.6484375" />
-                                    <Button fx:id="SB8" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSB8A" text="Turn off" />
+                                    <Button fx:id="SB8" disable="true" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSB8A" />
                                     <Text layoutX="592.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last heartbeat:" wrappingWidth="80.712890625" />
                                     <Separator layoutX="66.0" layoutY="1.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
                                     <Separator layoutX="174.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
@@ -206,9 +207,9 @@
                                     <Text layoutX="81.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: 3" wrappingWidth="43.23828125" />
                                     <Text layoutX="124.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column:3" />
                                     <Text layoutX="187.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP:192.168.1.98" />
-                                    <Text fx:id="MS9" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="State: ON" />
+                                    <Text fx:id="MS9" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" />
                                     <Text layoutX="408.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently displaying: listing" wrappingWidth="143.6484375" />
-                                    <Button fx:id="SB9" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSB9A" text="Turn off" />
+                                    <Button fx:id="SB9" disable="true" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSB9A" />
                                     <Text layoutX="592.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last heartbeat:" wrappingWidth="80.712890625" />
                                     <Separator layoutX="66.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
                                     <Separator layoutX="174.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
@@ -229,12 +230,18 @@
           </Tab>
             <Tab text="Adverts">
                <content>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView layoutX="14.0" layoutY="14.0" prefHeight="680.0" prefWidth="350.0" />
+                     </children></AnchorPane>
                </content>
             </Tab>
           <Tab text="Listings">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="512.0" />
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="512.0">
+                     <children>
+                        <ListView layoutX="14.0" layoutY="14.0" prefHeight="680.0" prefWidth="400.0" />
+                     </children></AnchorPane>
             </content>
           </Tab>
             <Tab text="Settings">

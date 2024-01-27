@@ -232,25 +232,25 @@ public class MainController {
 
     @FXML
     private void onSB2A() throws SQLException {
-        if (MS2.getText() == "State: ON") {
-            setMonitorState(2, 0);
+        if (MS2.getText() == "State: ON"){
+            setMonitorState(1, 0);
             MS2.setText("State: OFF");
             SB2.setText("Turn ON");
         } else {
-            setMonitorState(2, 1);
-            MS2.setText("State: ON");
+            setMonitorState(1, 1);
+            MS2.setText("State: ON");;
             SB2.setText("Turn OFF");
         }
     }
 
     @FXML
     private void onSB3A() throws SQLException {
-        if (MS3.getText() == "State: ON") {
-            setMonitorState(3, 0);
+        if (MS3.getText() == "State: ON"){
+            setMonitorState(1, 0);
             MS3.setText("State: OFF");
             SB3.setText("Turn ON");
         } else {
-            setMonitorState(3, 1);
+            setMonitorState(1, 1);
             MS3.setText("State: ON");
             SB3.setText("Turn OFF");
         }
@@ -258,25 +258,25 @@ public class MainController {
 
     @FXML
     private void onSB4A() throws SQLException {
-        if (MS4.getText() == "State: ON") {
-            setMonitorState(4, 0);
+        if (MS4.getText() == "State: ON"){
+            setMonitorState(1, 0);
             MS4.setText("State: OFF");
             SB4.setText("Turn ON");
         } else {
-            setMonitorState(4, 1);
+            setMonitorState(1, 1);
             MS4.setText("State: ON");
-            SB4.setText("Turn OFF");SB4.setText("Turn ON");
+            SB4.setText("Turn OFF");
         }
     }
 
     @FXML
     private void onSB5A() throws SQLException {
-        if (MS5.getText() == "State: ON") {
-            setMonitorState(5, 0);
+        if (MS5.getText() == "State: ON"){
+            setMonitorState(1, 0);
             MS5.setText("State: OFF");
             SB5.setText("Turn ON");
         } else {
-            setMonitorState(5, 1);
+            setMonitorState(1, 1);
             MS5.setText("State: ON");
             SB5.setText("Turn OFF");
         }
@@ -284,12 +284,12 @@ public class MainController {
 
     @FXML
     private void onSB6A() throws SQLException {
-        if (MS6.getText() == "State: ON") {
-            setMonitorState(6, 0);
+        if (MS6.getText() == "State: ON"){
+            setMonitorState(1, 0);
             MS6.setText("State: OFF");
             SB6.setText("Turn ON");
         } else {
-            setMonitorState(6, 1);
+            setMonitorState(1, 1);
             MS6.setText("State: ON");
             SB6.setText("Turn OFF");
         }
@@ -297,12 +297,12 @@ public class MainController {
 
     @FXML
     private void onSB7A() throws SQLException {
-        if (MS7.getText() == "State: ON") {
-            setMonitorState(7, 0);
+        if (MS7.getText() == "State: ON"){
+            setMonitorState(1, 0);
             MS7.setText("State: OFF");
             SB7.setText("Turn ON");
         } else {
-            setMonitorState(7, 1);
+            setMonitorState(1, 1);
             MS7.setText("State: ON");
             SB7.setText("Turn OFF");
         }
@@ -310,12 +310,12 @@ public class MainController {
 
     @FXML
     private void onSB8A() throws SQLException {
-        if (MS8.getText() == "State: ON") {
-            setMonitorState(8, 0);
+        if (MS8.getText() == "State: ON"){
+            setMonitorState(1, 0);
             MS8.setText("State: OFF");
             SB8.setText("Turn ON");
         } else {
-            setMonitorState(8, 1);
+            setMonitorState(1, 1);
             MS8.setText("State: ON");
             SB8.setText("Turn OFF");
         }
@@ -323,12 +323,12 @@ public class MainController {
 
     @FXML
     private void onSB9A() throws SQLException {
-        if (MS9.getText() == "State: ON") {
-            setMonitorState(9, 0);
+        if (MS9.getText() == "State: ON"){
+            setMonitorState(1, 0);
             MS9.setText("State: OFF");
             SB9.setText("Turn ON");
         } else {
-            setMonitorState(9, 1);
+            setMonitorState(1, 1);
             MS9.setText("State: ON");
             SB9.setText("Turn OFF");
         }
