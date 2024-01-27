@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
@@ -24,13 +32,13 @@
                         <WebView fx:id="MV1" contextMenuEnabled="false" disable="true" fontScale="0.1" layoutX="207.0" layoutY="14.0" prefHeight="326.0" prefWidth="183.0" />
                         <WebView fx:id="MV2" contextMenuEnabled="false" disable="true" fontScale="0.1" layoutX="400.0" layoutY="14.0" prefHeight="326.0" prefWidth="183.0" />
                         <WebView fx:id="MV3" contextMenuEnabled="false" disable="true" fontScale="0.1" layoutX="593.0" layoutY="14.0" prefHeight="326.0" prefWidth="183.0" />
-                        <WebView fx:id="MV4" contextMenuEnabled="false" disable="true" fontScale="0.1" layoutX="786.0" layoutY="14.0" prefHeight="326.0" prefWidth="183.0" />
+                        <WebView fx:id="MV4" contextMenuEnabled="false" disable="true" fontScale="0.1" layoutX="792.0" layoutY="189.0" prefHeight="326.0" prefWidth="183.0" />
                         <WebView fx:id="MV5" contextMenuEnabled="false" disable="true" fontScale="0.1" layoutX="207.0" layoutY="358.0" prefHeight="326.0" prefWidth="183.0" />
                         <WebView fx:id="MV6" contextMenuEnabled="false" disable="true" fontScale="0.1" layoutX="14.0" layoutY="358.0" prefHeight="326.0" prefWidth="183.0" />
                         <WebView fx:id="MV7" contextMenuEnabled="false" disable="true" fontScale="0.1" layoutX="400.0" layoutY="358.0" prefHeight="326.0" prefWidth="183.0" />
                         <WebView fx:id="MV8" contextMenuEnabled="false" disable="true" fontScale="0.1" layoutX="593.0" layoutY="358.0" prefHeight="326.0" prefWidth="183.0" />
-                        <Button layoutX="1000.0" layoutY="51.0" mnemonicParsing="false" onAction="#onRefresh" text="Refresh" />
-                        <Text layoutX="975.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monitor display simulation" textAlignment="CENTER" wrappingWidth="106.552734375" />
+                        <Button layoutX="855.0" layoutY="51.0" mnemonicParsing="false" onAction="#onRefresh" text="Refresh" />
+                        <Text layoutX="830.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monitor display simulation" textAlignment="CENTER" wrappingWidth="106.552734375" />
                      </children></AnchorPane>
                </content>
             </Tab>
@@ -43,12 +51,12 @@
                               <Separator prefWidth="200.0" />
                               <Pane prefHeight="50.0" prefWidth="705.0">
                                  <children>
-                                    <Text layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monitor 1" wrappingWidth="57.13671875" />
-                                    <Text layoutX="81.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: 1" wrappingWidth="43.23828125" />
-                                    <Text layoutX="124.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column:1" />
+                                    <Text layoutX="5.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monitor 1" wrappingWidth="57.13671875" />
+                                    <Text layoutX="75.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: 1" wrappingWidth="43.23828125" />
+                                    <Text layoutX="120.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column:1" />
                                     <Text layoutX="187.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP:192.168.1.90" />
                                     <Text fx:id="MS1" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                                    <Text layoutX="408.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently displaying: listing" wrappingWidth="143.6484375" />
+                                    <Text layoutX="405.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently displaying: listing" wrappingWidth="143.6484375" />
                                     <Button fx:id="SB1" disable="true" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSB1A" />
                                     <Text layoutX="592.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last heartbeat:" wrappingWidth="80.712890625" />
                                     <Separator layoutX="66.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
@@ -57,18 +65,18 @@
                                     <Separator layoutX="398.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
                                     <Separator layoutX="587.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
                                     <Text fx:id="MHB1" layoutX="592.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="92.13671875" />
-                                    <Text fx:id="MSL_ID_1" layoutX="552.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="36.13671875" />
+                                    <Text fx:id="MSL_ID_1" layoutX="550.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="36.13671875" />
                                  </children>
                               </Pane>
                               <Separator prefWidth="200.0" />
                               <Pane prefHeight="50.0" prefWidth="705.0">
                                  <children>
-                                    <Text layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monitor 2" wrappingWidth="57.13671875" />
-                                    <Text layoutX="81.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: 1" wrappingWidth="43.23828125" />
-                                    <Text layoutX="124.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column:2" />
+                                    <Text layoutX="5.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monitor 2" wrappingWidth="57.13671875" />
+                                    <Text layoutX="75.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: 1" wrappingWidth="43.23828125" />
+                                    <Text layoutX="120.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column:2" />
                                     <Text layoutX="187.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP:192.168.1.91" />
                                     <Text fx:id="MS2" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                                    <Text layoutX="408.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently displaying: listing" wrappingWidth="143.6484375" />
+                                    <Text layoutX="405.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently displaying: listing" wrappingWidth="143.6484375" />
                                     <Button fx:id="SB2" disable="true" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSB2A" />
                                     <Text layoutX="592.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last heartbeat:" wrappingWidth="80.712890625" />
                                     <Separator layoutX="66.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
@@ -77,18 +85,18 @@
                                     <Separator layoutX="398.0" layoutY="1.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
                                     <Separator layoutX="587.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
                                     <Text fx:id="MHB2" layoutX="592.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="92.13671875" />
-                                    <Text fx:id="MSL_ID_2" layoutX="552.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="36.13671875" />
+                                    <Text fx:id="MSL_ID_2" layoutX="550.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="36.13671875" />
                                  </children>
                               </Pane>
                               <Separator prefWidth="200.0" />
                               <Pane prefHeight="50.0" prefWidth="705.0">
                                  <children>
-                                    <Text layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monitor 3" wrappingWidth="57.13671875" />
-                                    <Text layoutX="81.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: 1" wrappingWidth="43.23828125" />
-                                    <Text layoutX="124.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column:3" />
+                                    <Text layoutX="5.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monitor 3" wrappingWidth="57.13671875" />
+                                    <Text layoutX="75.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: 1" wrappingWidth="43.23828125" />
+                                    <Text layoutX="120.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column:3" />
                                     <Text layoutX="187.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP:192.168.1.92" />
                                     <Text fx:id="MS3" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                                    <Text layoutX="408.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently displaying: listing" wrappingWidth="144.6484375" />
+                                    <Text layoutX="405.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently displaying: listing" wrappingWidth="144.6484375" />
                                     <Button fx:id="SB3" disable="true" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSB3A" />
                                     <Text layoutX="592.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last heartbeat:" wrappingWidth="80.712890625" />
                                     <Separator layoutX="66.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
@@ -97,18 +105,18 @@
                                     <Separator layoutX="398.0" layoutY="1.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
                                     <Separator layoutX="587.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
                                     <Text fx:id="MHB3" layoutX="592.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="92.13671875" />
-                                    <Text fx:id="MSL_ID_3" layoutX="552.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="36.13671875" />
+                                    <Text fx:id="MSL_ID_3" layoutX="550.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="36.13671875" />
                                  </children>
                               </Pane>
                               <Separator prefWidth="200.0" />
                               <Pane prefHeight="50.0" prefWidth="705.0">
                                  <children>
-                                    <Text layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monitor 4" wrappingWidth="57.13671875" />
-                                    <Text layoutX="81.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: 2" wrappingWidth="43.23828125" />
-                                    <Text layoutX="124.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column:1" />
+                                    <Text layoutX="5.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monitor 4" wrappingWidth="57.13671875" />
+                                    <Text layoutX="75.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: 2" wrappingWidth="43.23828125" />
+                                    <Text layoutX="120.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column:1" />
                                     <Text layoutX="187.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP:192.168.1.93" />
                                     <Text fx:id="MS4" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                                    <Text layoutX="408.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently displaying: listing" wrappingWidth="144.6484375" />
+                                    <Text layoutX="405.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently displaying: listing" wrappingWidth="144.6484375" />
                                     <Button fx:id="SB4" disable="true" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSB4A" />
                                     <Text layoutX="592.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last heartbeat:" wrappingWidth="80.712890625" />
                                     <Separator layoutX="66.0" layoutY="1.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
@@ -117,18 +125,18 @@
                                     <Separator layoutX="398.0" layoutY="1.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
                                     <Separator layoutX="587.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
                                     <Text fx:id="MHB4" layoutX="592.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="92.13671875" />
-                                    <Text fx:id="MSL_ID_4" layoutX="552.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="36.13671875" />
+                                    <Text fx:id="MSL_ID_4" layoutX="550.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="36.13671875" />
                                  </children>
                               </Pane>
                               <Separator prefWidth="200.0" />
                               <Pane prefHeight="50.0" prefWidth="705.0">
                                  <children>
-                                    <Text layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monitor 5" wrappingWidth="57.13671875" />
-                                    <Text layoutX="81.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: 2" wrappingWidth="43.23828125" />
-                                    <Text layoutX="124.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column:2" />
+                                    <Text layoutX="5.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monitor 5" wrappingWidth="57.13671875" />
+                                    <Text layoutX="75.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: 2" wrappingWidth="43.23828125" />
+                                    <Text layoutX="120.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column:2" />
                                     <Text layoutX="187.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP:192.168.1.94" />
                                     <Text fx:id="MS5" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                                    <Text layoutX="408.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently displaying: listing" wrappingWidth="144.6484375" />
+                                    <Text layoutX="405.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently displaying: listing" wrappingWidth="144.6484375" />
                                     <Button fx:id="SB5" disable="true" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSB5A" />
                                     <Text layoutX="592.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last heartbeat:" wrappingWidth="80.712890625" />
                                     <Separator layoutX="66.0" layoutY="1.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
@@ -137,18 +145,18 @@
                                     <Separator layoutX="398.0" layoutY="1.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
                                     <Separator layoutX="587.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
                                     <Text fx:id="MHB5" layoutX="592.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="92.13671875" />
-                                    <Text fx:id="MSL_ID_5" layoutX="552.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="36.13671875" />
+                                    <Text fx:id="MSL_ID_5" layoutX="550.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="36.13671875" />
                                  </children>
                               </Pane>
                               <Separator prefWidth="200.0" />
                               <Pane prefHeight="50.0" prefWidth="705.0">
                                  <children>
-                                    <Text layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monitor 6" wrappingWidth="57.13671875" />
-                                    <Text layoutX="81.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: 2" wrappingWidth="43.23828125" />
-                                    <Text layoutX="124.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column:3" />
+                                    <Text layoutX="5.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monitor 6" wrappingWidth="57.13671875" />
+                                    <Text layoutX="75.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: 2" wrappingWidth="43.23828125" />
+                                    <Text layoutX="120.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column:3" />
                                     <Text layoutX="187.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP:192.168.1.95" />
                                     <Text fx:id="MS6" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                                    <Text layoutX="408.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently displaying: listing" wrappingWidth="143.6484375" />
+                                    <Text layoutX="405.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently displaying: listing" wrappingWidth="143.6484375" />
                                     <Button fx:id="SB6" disable="true" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSB6A" />
                                     <Text layoutX="592.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last heartbeat:" wrappingWidth="80.712890625" />
                                     <Separator layoutX="66.0" layoutY="1.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
@@ -157,18 +165,18 @@
                                     <Separator layoutX="398.0" layoutY="1.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
                                     <Separator layoutX="587.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
                                     <Text fx:id="MHB6" layoutX="592.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="92.13671875" />
-                                    <Text fx:id="MSL_ID_6" layoutX="552.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="36.13671875" />
+                                    <Text fx:id="MSL_ID_6" layoutX="550.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="36.13671875" />
                                  </children>
                               </Pane>
                               <Separator prefWidth="200.0" />
                               <Pane prefHeight="50.0" prefWidth="705.0">
                                  <children>
-                                    <Text layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monitor 7" wrappingWidth="57.13671875" />
-                                    <Text layoutX="81.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: 3" wrappingWidth="43.23828125" />
-                                    <Text layoutX="124.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column:1" />
+                                    <Text layoutX="5.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monitor 7" wrappingWidth="57.13671875" />
+                                    <Text layoutX="75.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: 3" wrappingWidth="43.23828125" />
+                                    <Text layoutX="120.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column:1" />
                                     <Text layoutX="187.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP:192.168.1.96" />
                                     <Text fx:id="MS7" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                                    <Text layoutX="408.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently displaying: listing" wrappingWidth="146.6484375" />
+                                    <Text layoutX="405.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently displaying: listing" wrappingWidth="146.6484375" />
                                     <Button fx:id="SB7" disable="true" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSB7A" />
                                     <Text layoutX="592.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last heartbeat:" wrappingWidth="80.712890625" />
                                     <Separator layoutX="66.0" layoutY="1.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
@@ -177,18 +185,18 @@
                                     <Separator layoutX="398.0" layoutY="1.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
                                     <Separator layoutX="587.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
                                     <Text fx:id="MHB7" layoutX="592.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="92.13671875" />
-                                    <Text fx:id="MSL_ID_7" layoutX="552.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="29.13671875" />
+                                    <Text fx:id="MSL_ID_7" layoutX="550.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="29.13671875" />
                                  </children>
                               </Pane>
                               <Separator prefWidth="200.0" />
                               <Pane prefHeight="50.0" prefWidth="705.0">
                                  <children>
-                                    <Text layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monitor 8" wrappingWidth="57.13671875" />
-                                    <Text layoutX="81.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: 3" wrappingWidth="43.23828125" />
-                                    <Text layoutX="124.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column:2" />
+                                    <Text layoutX="5.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monitor 8" wrappingWidth="57.13671875" />
+                                    <Text layoutX="75.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: 3" wrappingWidth="43.23828125" />
+                                    <Text layoutX="120.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column:2" />
                                     <Text layoutX="187.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP:192.168.1.97" />
                                     <Text fx:id="MS8" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                                    <Text layoutX="408.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently displaying: listing" wrappingWidth="144.6484375" />
+                                    <Text layoutX="405.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently displaying: listing" wrappingWidth="144.6484375" />
                                     <Button fx:id="SB8" disable="true" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSB8A" />
                                     <Text layoutX="592.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last heartbeat:" wrappingWidth="80.712890625" />
                                     <Separator layoutX="66.0" layoutY="1.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
@@ -197,18 +205,18 @@
                                     <Separator layoutX="398.0" layoutY="1.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
                                     <Separator layoutX="587.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
                                     <Text fx:id="MHB8" layoutX="592.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="92.13671875" />
-                                    <Text fx:id="MSL_ID_8" layoutX="552.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="36.13671875" />
+                                    <Text fx:id="MSL_ID_8" layoutX="550.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="36.13671875" />
                                  </children>
                               </Pane>
                               <Separator prefWidth="200.0" />
                               <Pane prefHeight="50.0" prefWidth="705.0">
                                  <children>
-                                    <Text layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monitor 9" wrappingWidth="57.13671875" />
-                                    <Text layoutX="81.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: 3" wrappingWidth="43.23828125" />
-                                    <Text layoutX="124.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column:3" />
+                                    <Text layoutX="5.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monitor 9" wrappingWidth="57.13671875" />
+                                    <Text layoutX="75.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Row: 3" wrappingWidth="43.23828125" />
+                                    <Text layoutX="120.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column:3" />
                                     <Text layoutX="187.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP:192.168.1.98" />
                                     <Text fx:id="MS9" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                                    <Text layoutX="408.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently displaying: listing" wrappingWidth="143.6484375" />
+                                    <Text layoutX="405.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently displaying: listing" wrappingWidth="143.6484375" />
                                     <Button fx:id="SB9" disable="true" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSB9A" />
                                     <Text layoutX="592.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last heartbeat:" wrappingWidth="80.712890625" />
                                     <Separator layoutX="66.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
@@ -217,7 +225,7 @@
                                     <Separator layoutX="398.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
                                     <Separator layoutX="587.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="10.0" />
                                     <Text fx:id="MHB9" layoutX="592.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="92.13671875" />
-                                    <Text fx:id="MSL_ID_9" layoutX="552.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="36.13671875" />
+                                    <Text fx:id="MSL_ID_9" layoutX="550.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="36.13671875" />
                                  </children>
                               </Pane>
                               <Separator prefWidth="200.0" />
@@ -232,7 +240,65 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <ListView layoutX="14.0" layoutY="14.0" prefHeight="680.0" prefWidth="350.0" />
+                        <ListView fx:id="advertsList" layoutX="10.0" layoutY="40.0" prefHeight="650.0" prefWidth="780.0" />
+                        <TextField layoutX="794.0" layoutY="55.0" prefHeight="25.0" prefWidth="280.0" />
+                        <TextField disable="true" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="157.0" promptText="Four last digtis of listing ID" />
+                        <Button disable="true" layoutX="173.0" layoutY="10.0" mnemonicParsing="false" text="Search" />
+                        <Button layoutX="794.0" layoutY="412.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Alter ad" />
+                        <Text layoutX="794.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ad ID" />
+                        <Text layoutX="794.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Listing ID" />
+                        <TextField layoutX="794.0" layoutY="105.0" prefHeight="25.0" prefWidth="280.0" />
+                        <TextField disable="true" layoutX="794.0" layoutY="355.0" prefHeight="25.0" prefWidth="120.0" />
+                        <Text layoutX="794.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preferred column" />
+                        <Text layoutX="795.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prefferd row" />
+                        <TextField disable="true" layoutX="795.0" layoutY="305.0" prefHeight="25.0" prefWidth="120.0" />
+                        <TextField disable="true" layoutX="900.0" layoutY="412.0" promptText="Enter ad ID" />
+                        <Separator layoutX="790.0" layoutY="446.0" prefHeight="9.0" prefWidth="306.0" />
+                        <Button disable="true" layoutX="794.0" layoutY="547.0" mnemonicParsing="false" text="Add" />
+                        <Text layoutX="794.0" layoutY="502.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Site's listing ID" />
+                        <TextField disable="true" layoutX="794.0" layoutY="507.0" prefHeight="25.0" prefWidth="280.0" promptText="Enter the last four digits of the Site's ID for the listing" />
+                        <Button disable="true" layoutX="794.0" layoutY="665.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Delete" />
+                        <Text layoutX="794.0" layoutY="620.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ad ID" />
+                        <TextField disable="true" layoutX="794.0" layoutY="625.0" prefHeight="25.0" prefWidth="280.0" />
+                        <TextField disable="true" layoutX="902.0" layoutY="665.0" promptText="Enter again the ad ID" />
+                        <Separator layoutX="790.0" layoutY="572.0" prefHeight="9.0" prefWidth="306.0" />
+                        <Text layoutX="911.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add new ad" textAlignment="CENTER" />
+                        <Text layoutX="918.0" layoutY="594.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete ad" textAlignment="CENTER" />
+                        <DatePicker disable="true" layoutX="794.0" layoutY="155.0" prefHeight="25.0" prefWidth="135.0" />
+                        <DatePicker disable="true" layoutX="934.0" layoutY="155.0" prefHeight="25.0" prefWidth="135.0" />
+                        <ToggleButton disable="true" layoutX="794.0" layoutY="255.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" text="Active" textOverrun="CLIP" />
+                        <TextField disable="true" layoutX="794.0" layoutY="205.0" prefWidth="135.0" promptText="1 to 10 Scale" />
+                        <TextField disable="true" layoutX="934.0" layoutY="205.0" prefWidth="135.0" promptText="In minutes" />
+                        <GridPane layoutX="952.0" layoutY="282.0" prefHeight="100.0" prefWidth="100.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <CheckBox allowIndeterminate="true" disable="true" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <CheckBox allowIndeterminate="true" disable="true" mnemonicParsing="false" textAlignment="CENTER" GridPane.rowIndex="2" />
+                              <CheckBox allowIndeterminate="true" disable="true" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="1" />
+                              <CheckBox allowIndeterminate="true" disable="true" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="2" />
+                              <CheckBox allowIndeterminate="true" disable="true" mnemonicParsing="false" textAlignment="CENTER" GridPane.rowIndex="1" />
+                              <CheckBox allowIndeterminate="true" disable="true" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <CheckBox allowIndeterminate="true" disable="true" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <CheckBox allowIndeterminate="true" disable="true" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                              <CheckBox allowIndeterminate="true" disable="true" mnemonicParsing="false" textAlignment="CENTER" />
+                           </children>
+                        </GridPane>
+                        <Text layoutX="948.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monitos position" />
+                        <Text layoutX="794.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start date" />
+                        <Text layoutX="794.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Priority" />
+                        <Text layoutX="934.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End date" />
+                        <Text layoutX="934.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Screentime" />
+                        <Text layoutX="794.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ad state" />
+                        <Button layoutX="742.0" layoutY="10.0" mnemonicParsing="false" text="Select" />
                      </children></AnchorPane>
                </content>
             </Tab>
@@ -240,7 +306,31 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="512.0">
                      <children>
-                        <ListView layoutX="14.0" layoutY="14.0" prefHeight="680.0" prefWidth="400.0" />
+                        <ListView fx:id="listingsList" layoutX="15.0" layoutY="40.0" prefHeight="650.0" prefWidth="775.0" />
+                        <TextField disable="true" layoutX="793.0" layoutY="55.0" prefHeight="25.0" prefWidth="280.0" />
+                        <TextField disable="true" layoutX="15.0" layoutY="10.0" prefHeight="25.0" prefWidth="157.0" promptText="Four last digtis of listing ID" />
+                        <Button disable="true" layoutX="177.0" layoutY="10.0" mnemonicParsing="false" text="Search" />
+                        <Button disable="true" layoutX="793.0" layoutY="245.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Change URL's" />
+                        <Text layoutX="793.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Internal ID" />
+                        <Text layoutX="793.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Site's listing ID" />
+                        <TextField disable="true" layoutX="793.0" layoutY="105.0" prefHeight="25.0" prefWidth="280.0" />
+                        <TextField disable="true" layoutX="793.0" layoutY="155.0" prefHeight="25.0" prefWidth="280.0" />
+                        <Text layoutX="793.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Site's listing URL" />
+                        <Text layoutX="793.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monitor view URL" />
+                        <TextField disable="true" layoutX="793.0" layoutY="205.0" prefHeight="25.0" prefWidth="280.0" />
+                        <TextField disable="true" layoutX="901.0" layoutY="245.0" promptText="Enter internal ID" />
+                        <Separator layoutX="789.0" layoutY="283.0" prefHeight="9.0" prefWidth="306.0" />
+                        <Button layoutX="793.0" layoutY="368.0" mnemonicParsing="false" text="Add" />
+                        <Text layoutX="793.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Site's listing ID" />
+                        <TextField layoutX="793.0" layoutY="328.0" prefHeight="25.0" prefWidth="280.0" promptText="Enter the last four digits of the Site's ID for the listing" />
+                        <Button disable="true" layoutX="793.0" layoutY="665.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Delete" />
+                        <Text layoutX="793.0" layoutY="620.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Site's listing ID" />
+                        <TextField disable="true" layoutX="793.0" layoutY="625.0" prefHeight="25.0" prefWidth="280.0" />
+                        <TextField disable="true" layoutX="901.0" layoutY="665.0" promptText="Enter again the site's ID" />
+                        <Separator layoutX="789.0" layoutY="572.0" prefHeight="9.0" prefWidth="306.0" />
+                        <Text layoutX="892.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add new listing" textAlignment="CENTER" />
+                        <Text layoutX="907.0" layoutY="594.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete listing" textAlignment="CENTER" />
+                        <Button layoutX="741.0" layoutY="10.0" mnemonicParsing="false" text="Select" />
                      </children></AnchorPane>
             </content>
           </Tab>
@@ -258,5 +348,6 @@
             </Tab>
         </tabs>
       </TabPane>
+      <RadioButton layoutX="-124.0" layoutY="-108.0" mnemonicParsing="false" text="RadioButton" />
    </children>
 </Pane>

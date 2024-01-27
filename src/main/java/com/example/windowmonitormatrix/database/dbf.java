@@ -68,4 +68,36 @@ public class dbf {
         ps.setInt(2, monitor_ID);
         ps.executeUpdate();
     }
+
+    public static int getNumberOfentrys(String tablename) throws SQLException {
+        String sqlStr = "select count(*) from "+tablename;
+        PreparedStatement ps = db_conn().prepareStatement(sqlStr);
+        ResultSet rs = ps.executeQuery();
+        while (rs.next()) {
+            return rs.getInt(1);
+        }
+        return -1;
+    }
+
+    public static String getStringfromtable(int ID, String tableName, String columnName) throws SQLException {
+        String sqlStr = "select " + columnName + " from " + tableName + " where ID = ?";
+        PreparedStatement ps = db_conn().prepareStatement(sqlStr);
+        ps.setInt(1, ID);
+        ResultSet rs = ps.executeQuery();
+        while (rs.next()) {
+            return rs.getString(columnName);
+        }
+        return null;
+    }
+
+    public static int getIntfromtable(int ID, String tableName, String columnName) throws SQLException {
+        String sqlStr = "select " + columnName + " from " + tableName + " where ID = ?";
+        PreparedStatement ps = db_conn().prepareStatement(sqlStr);
+        ps.setInt(1, ID);
+        ResultSet rs = ps.executeQuery();
+        while (rs.next()) {
+            return rs.getInt(columnName);
+        }
+        return Integer.parseInt(null);
+    }
 }

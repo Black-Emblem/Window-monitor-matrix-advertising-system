@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.scene.web.WebEngine;
@@ -17,6 +18,12 @@ import java.sql.SQLException;
 import static com.example.windowmonitormatrix.database.dbf.*;
 
 public class MainController {
+
+    @FXML
+    private ListView listingsList;
+    @FXML
+    private ListView advertsList;
+
     @FXML
     private WebView MV0;
     @FXML
@@ -122,8 +129,11 @@ public class MainController {
     private WebEngine engine7;
     private WebEngine engine8;
 
+
     @FXML
     public void initialize() throws SQLException {
+
+        int temp = -1;
 
         engine0 = MV0.getEngine();
         engine1 = MV1.getEngine();
@@ -203,6 +213,17 @@ public class MainController {
         MHB7.setText(getMonitorheartbeat(7));
         MHB8.setText(getMonitorheartbeat(8));
         MHB9.setText(getMonitorheartbeat(9));
+
+        temp=getNumberOfentrys("listing_relation")+1;
+        for (int i = 1; i < temp; i++) {
+            advertsList.getItems().add("Add ID: "+ i +" Listing ID: ");
+        }
+        temp=-1;
+        temp=getNumberOfentrys("listings")+1;
+        for (int i = 1; i < temp; i++) {
+            listingsList.getItems().add("Internal ID: "+ i +" | Listing ID: "+getStringfromtable(i,"listings","listing_uid")+" | Normal URL: "+getStringfromtable(i,"listings","norm_site_url")+" | Monitorview URL: "+getStringfromtable(i,"listings","mview_url"));
+        }
+
     }
 
     private void loadWebView(WebEngine engine, String propertyId) {
