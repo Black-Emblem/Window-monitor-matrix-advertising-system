@@ -259,7 +259,7 @@ public class MainController {
             SB2.setText("Turn ON");
         } else {
             setMonitorState(1, 1);
-            MS2.setText("State: ON");;
+            MS2.setText("State: ON");
             SB2.setText("Turn OFF");
         }
     }
