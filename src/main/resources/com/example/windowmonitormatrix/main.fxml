@@ -241,18 +241,18 @@
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <ListView fx:id="advertsList" layoutX="10.0" layoutY="40.0" prefHeight="650.0" prefWidth="780.0" />
-                        <TextField layoutX="794.0" layoutY="55.0" prefHeight="25.0" prefWidth="280.0" />
+                        <TextField fx:id="TFadid" disable="true" layoutX="794.0" layoutY="55.0" prefHeight="25.0" prefWidth="280.0" />
                         <TextField disable="true" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="157.0" promptText="Four last digtis of listing ID" />
                         <Button disable="true" layoutX="173.0" layoutY="10.0" mnemonicParsing="false" text="Search" />
-                        <Button layoutX="794.0" layoutY="412.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Alter ad" />
+                        <Button layoutX="794.0" layoutY="412.0" mnemonicParsing="false" onAction="#onAlterAD" prefHeight="25.0" prefWidth="90.0" text="Alter ad" />
                         <Text layoutX="794.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ad ID" />
                         <Text layoutX="794.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Listing ID" />
-                        <TextField layoutX="794.0" layoutY="105.0" prefHeight="25.0" prefWidth="280.0" />
-                        <TextField disable="true" layoutX="794.0" layoutY="355.0" prefHeight="25.0" prefWidth="120.0" />
+                        <TextField fx:id="TFlistingadRelationID" layoutX="794.0" layoutY="105.0" prefHeight="25.0" prefWidth="280.0" />
+                        <TextField fx:id="TFcolumn" disable="true" layoutX="794.0" layoutY="355.0" prefHeight="25.0" prefWidth="120.0" />
                         <Text layoutX="794.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preferred column" />
                         <Text layoutX="795.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prefferd row" />
-                        <TextField disable="true" layoutX="795.0" layoutY="305.0" prefHeight="25.0" prefWidth="120.0" />
-                        <TextField disable="true" layoutX="900.0" layoutY="412.0" promptText="Enter ad ID" />
+                        <TextField fx:id="TFrow" disable="true" layoutX="795.0" layoutY="305.0" prefHeight="25.0" prefWidth="120.0" />
+                        <TextField fx:id="TFalterad" disable="true" layoutX="900.0" layoutY="412.0" promptText="Enter ad ID" />
                         <Separator layoutX="790.0" layoutY="446.0" prefHeight="9.0" prefWidth="306.0" />
                         <Button disable="true" layoutX="794.0" layoutY="547.0" mnemonicParsing="false" text="Add" />
                         <Text layoutX="794.0" layoutY="502.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Site's listing ID" />
@@ -264,11 +264,11 @@
                         <Separator layoutX="790.0" layoutY="572.0" prefHeight="9.0" prefWidth="306.0" />
                         <Text layoutX="911.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add new ad" textAlignment="CENTER" />
                         <Text layoutX="918.0" layoutY="594.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete ad" textAlignment="CENTER" />
-                        <DatePicker disable="true" layoutX="794.0" layoutY="155.0" prefHeight="25.0" prefWidth="135.0" />
-                        <DatePicker disable="true" layoutX="934.0" layoutY="155.0" prefHeight="25.0" prefWidth="135.0" />
-                        <ToggleButton disable="true" layoutX="794.0" layoutY="255.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" text="Active" textOverrun="CLIP" />
-                        <TextField disable="true" layoutX="794.0" layoutY="205.0" prefWidth="135.0" promptText="1 to 10 Scale" />
-                        <TextField disable="true" layoutX="934.0" layoutY="205.0" prefWidth="135.0" promptText="In minutes" />
+                        <DatePicker fx:id="DFstartdate" disable="true" layoutX="794.0" layoutY="155.0" prefHeight="25.0" prefWidth="135.0" />
+                        <DatePicker fx:id="DFenddate" disable="true" layoutX="934.0" layoutY="155.0" prefHeight="25.0" prefWidth="135.0" />
+                        <ToggleButton fx:id="TBadstate" disable="true" layoutX="794.0" layoutY="255.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" text="Active" textOverrun="CLIP" />
+                        <TextField fx:id="TFpriority" disable="true" layoutX="794.0" layoutY="205.0" prefWidth="135.0" promptText="1 to 10 Scale" />
+                        <TextField fx:id="TFscreentime" disable="true" layoutX="934.0" layoutY="205.0" prefWidth="135.0" promptText="In minutes" />
                         <GridPane layoutX="952.0" layoutY="282.0" prefHeight="100.0" prefWidth="100.0">
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -281,15 +281,18 @@
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <CheckBox allowIndeterminate="true" disable="true" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                              <CheckBox allowIndeterminate="true" disable="true" mnemonicParsing="false" textAlignment="CENTER" GridPane.rowIndex="2" />
-                              <CheckBox allowIndeterminate="true" disable="true" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="1" />
-                              <CheckBox allowIndeterminate="true" disable="true" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="2" />
-                              <CheckBox allowIndeterminate="true" disable="true" mnemonicParsing="false" textAlignment="CENTER" GridPane.rowIndex="1" />
-                              <CheckBox allowIndeterminate="true" disable="true" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                              <CheckBox allowIndeterminate="true" disable="true" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                              <CheckBox allowIndeterminate="true" disable="true" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                              <CheckBox allowIndeterminate="true" disable="true" mnemonicParsing="false" textAlignment="CENTER" />
+                              <CheckBox fx:id="CB1" allowIndeterminate="true" disable="true" mnemonicParsing="false" textAlignment="CENTER" />
+                              <CheckBox fx:id="CB2" allowIndeterminate="true" disable="true" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="1" />
+                              <CheckBox fx:id="CB3" allowIndeterminate="true" disable="true" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="2" />
+                              <CheckBox fx:id="CB4" allowIndeterminate="true" disable="true" mnemonicParsing="false" textAlignment="CENTER" GridPane.rowIndex="1" />
+                              <CheckBox fx:id="CB5" allowIndeterminate="true" disable="true" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <CheckBox fx:id="CB6" allowIndeterminate="true" disable="true" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <CheckBox fx:id="CB7" allowIndeterminate="true" disable="true" mnemonicParsing="false" textAlignment="CENTER" GridPane.rowIndex="2" />
+                              <CheckBox fx:id="CB8" allowIndeterminate="true" disable="true" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <CheckBox fx:id="CB9" allowIndeterminate="true" disable="true" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font />
+                                 </font></CheckBox>
                            </children>
                         </GridPane>
                         <Text layoutX="948.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monitos position" />
@@ -298,7 +301,9 @@
                         <Text layoutX="934.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End date" />
                         <Text layoutX="934.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Screentime" />
                         <Text layoutX="794.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ad state" />
-                        <Button layoutX="742.0" layoutY="10.0" mnemonicParsing="false" text="Select" />
+                        <Button layoutX="602.0" layoutY="10.0" mnemonicParsing="false" onAction="#onSelectAd" text="Select" />
+                        <Text layoutX="650.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* first select item from list" />
+                        <Button layoutX="362.0" layoutY="10.0" mnemonicParsing="false" onAction="#onRefreshAdList" text="Refresh List" />
                      </children></AnchorPane>
                </content>
             </Tab>
@@ -307,22 +312,22 @@
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="512.0">
                      <children>
                         <ListView fx:id="listingsList" layoutX="15.0" layoutY="40.0" prefHeight="650.0" prefWidth="775.0" />
-                        <TextField disable="true" layoutX="793.0" layoutY="55.0" prefHeight="25.0" prefWidth="280.0" />
+                        <TextField fx:id="TFlistinginternalID" disable="true" layoutX="793.0" layoutY="55.0" prefHeight="25.0" prefWidth="280.0" />
                         <TextField disable="true" layoutX="15.0" layoutY="10.0" prefHeight="25.0" prefWidth="157.0" promptText="Four last digtis of listing ID" />
                         <Button disable="true" layoutX="177.0" layoutY="10.0" mnemonicParsing="false" text="Search" />
-                        <Button disable="true" layoutX="793.0" layoutY="245.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Change URL's" />
+                        <Button disable="true" layoutX="793.0" layoutY="245.0" mnemonicParsing="false" onAction="#onUpdatelisting" prefHeight="25.0" prefWidth="90.0" text="Change URL's" />
                         <Text layoutX="793.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Internal ID" />
                         <Text layoutX="793.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Site's listing ID" />
-                        <TextField disable="true" layoutX="793.0" layoutY="105.0" prefHeight="25.0" prefWidth="280.0" />
-                        <TextField disable="true" layoutX="793.0" layoutY="155.0" prefHeight="25.0" prefWidth="280.0" />
+                        <TextField fx:id="TFlistingID" disable="true" layoutX="793.0" layoutY="105.0" prefHeight="25.0" prefWidth="280.0" />
+                        <TextField fx:id="TFlistingurl" disable="true" layoutX="793.0" layoutY="155.0" prefHeight="25.0" prefWidth="280.0" />
                         <Text layoutX="793.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Site's listing URL" />
                         <Text layoutX="793.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monitor view URL" />
-                        <TextField disable="true" layoutX="793.0" layoutY="205.0" prefHeight="25.0" prefWidth="280.0" />
-                        <TextField disable="true" layoutX="901.0" layoutY="245.0" promptText="Enter internal ID" />
+                        <TextField fx:id="TFlistingmviewurl" disable="true" layoutX="793.0" layoutY="205.0" prefHeight="25.0" prefWidth="280.0" />
+                        <TextField fx:id="TFupdatelistingID" disable="true" layoutX="901.0" layoutY="245.0" promptText="Enter internal ID" />
                         <Separator layoutX="789.0" layoutY="283.0" prefHeight="9.0" prefWidth="306.0" />
-                        <Button layoutX="793.0" layoutY="368.0" mnemonicParsing="false" text="Add" />
+                        <Button layoutX="793.0" layoutY="368.0" mnemonicParsing="false" onAction="#onCreatenewlisting" text="Add" />
                         <Text layoutX="793.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Site's listing ID" />
-                        <TextField layoutX="793.0" layoutY="328.0" prefHeight="25.0" prefWidth="280.0" promptText="Enter the last four digits of the Site's ID for the listing" />
+                        <TextField fx:id="TFnewlistingID" layoutX="793.0" layoutY="328.0" prefHeight="25.0" prefWidth="280.0" promptText="Enter the last four digits of the Site's ID for the listing" />
                         <Button disable="true" layoutX="793.0" layoutY="665.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Delete" />
                         <Text layoutX="793.0" layoutY="620.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Site's listing ID" />
                         <TextField disable="true" layoutX="793.0" layoutY="625.0" prefHeight="25.0" prefWidth="280.0" />
@@ -330,7 +335,9 @@
                         <Separator layoutX="789.0" layoutY="572.0" prefHeight="9.0" prefWidth="306.0" />
                         <Text layoutX="892.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add new listing" textAlignment="CENTER" />
                         <Text layoutX="907.0" layoutY="594.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete listing" textAlignment="CENTER" />
-                        <Button layoutX="741.0" layoutY="10.0" mnemonicParsing="false" text="Select" />
+                        <Button layoutX="605.0" layoutY="10.0" mnemonicParsing="false" onAction="#onSelectListing" text="Select" />
+                        <Text layoutX="653.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* first select item from list" />
+                        <Button layoutX="364.0" layoutY="10.0" mnemonicParsing="false" onAction="#onRefreshListingList" text="Refresh List" />
                      </children></AnchorPane>
             </content>
           </Tab>
