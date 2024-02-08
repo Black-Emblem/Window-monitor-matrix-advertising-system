@@ -283,9 +283,9 @@ public class MainController {
         engine.load("https://nowrealestate.gr/property/"+propertyId);
         engine.getLoadWorker().stateProperty().addListener((obs, oldValue, newValue) -> {
             if (newValue == Worker.State.SUCCEEDED) {
-                System.out.println("Page has been loaded");
+
             } else if (newValue == Worker.State.FAILED) {
-                System.out.println("Loading failed");
+
             }
         });
     }

@@ -7,9 +7,9 @@ import static java.lang.Class.*;
 public class dbconn {
     static Connection conn = null;
 
-    public static void initializeConn() {
+    public static void initializeConn() throws SQLException {
         if (conn == null){
-            final String DB_URL = "jdbc:mariadb://192.168.1.8:3306/MMdb";
+            final String DB_URL = "jdbc:mariadb://192.168.1.90:3306/MMdb";
 
             final String USER = "admin";
             final String PASS = "admin";
@@ -26,7 +26,7 @@ public class dbconn {
 
     public static Connection db_conn() throws SQLException {
         if (conn == null){
-            final String DB_URL = "jdbc:mariadb://192.168.1.8:3306/MMdb";
+            final String DB_URL = "jdbc:mariadb://192.168.1.90:3306/MMdb";
 
             final String USER = "admin";
             final String PASS = "admin";

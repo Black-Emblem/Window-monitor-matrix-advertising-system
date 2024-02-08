@@ -21,13 +21,16 @@ public class startController {
     @FXML
     private Button startButton;
 
-    @FXML
-    public void initialize() throws SQLException {
-        db_conn();
-    }
 
     @FXML
     private void connect(ActionEvent event) throws IOException {
+        try {
+            db_conn();
+        } catch (SQLException e) {
+            messageText.setText("We encounter a error while trying to connect to the database.");
+            throw new RuntimeException(e);
+        }
+
         if (startButton.getText()=="Enter"){
             FXMLLoader loader = new FXMLLoader(getClass().getResource("main.fxml"));
             Parent root = loader.load();
